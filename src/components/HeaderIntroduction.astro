@@ -1,0 +1,27 @@
+---
+import { Image } from "@astrojs/image/components";
+import avatarImage from "../images/myAvatar2.jpg";
+---
+
+<div
+	class="h-auto justify-center bg-white border border-gray-200 rounded-lg shadow"
+	style={{ backgroundColor: "white" }}
+>
+	<div class="flex flex-col items-center">
+		<div class="flex justify-center">
+			<div class="w-1/4 h-1/4 m-auto">
+				<Image
+					class="my-10 mr-10 ml-5 rounded-lg shadow-lg"
+					src={avatarImage}
+					width={1920}
+					height={1920}
+					alt="avatarImage"
+				/>
+			</div>
+			<div class="m-auto">
+				<div class="mb-1 text-4xl font-extrabold dark:text-black">Ren</div>
+				<span class="text-xl dark:text-black">Web Frontend Engineer</span>
+			</div>
+		</div>
+	</div>
+</div>
